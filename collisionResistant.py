@@ -5,9 +5,9 @@ import hashlib
 numTrials = 0
 #pastStrings = set()
 while True:
-	randomString1 = ''.join([random.choice(string.ascii_letters + string.digits + string.punctuation) for n in xrange(20)])
-	randomString2 = ''.join([random.choice(string.ascii_letters + string.digits + string.punctuation) for n in xrange(20)])
-	#don't want to check any strings that have already been in set, b/c they won't produce a collision
+	randomString1 = ''.join([random.choice(string.ascii_letters + string.digits + string.punctuation) for n in range(20)])
+	randomString2 = ''.join([random.choice(string.ascii_letters + string.digits + string.punctuation) for n in range(20)])
+
 	if randomString1 == randomString2: 
 		continue;
 	else:
